@@ -10,6 +10,7 @@ const server = http.createServer((req, res) => {
   res.write("<head> <title> Working test123 </title> </head>");
   res.write("<body>testing </body>");
   res.write("</html>");
+  res.end();
 });
 
 server.listen(3000);
