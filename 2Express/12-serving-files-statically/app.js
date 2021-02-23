@@ -10,7 +10,7 @@ const shopRoutes = require("./routes/shop");
 const { static } = require("express");
 
 app.use(bodyParser.urlencoded({ extended: false }));
-// serving static files in the public folder... it has all css files...
+// serving static files in the public folder... it has all css/image files...
 app.use(express.static(path.join(__dirname, "public")));
 
 // Here express.static is added because when it pulls the html document, we know that

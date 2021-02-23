@@ -9,7 +9,15 @@ through the middlewares present ...
 ExpressJS relies heavily on middleware functions.
 you can add them by calling use()
 
-Middleware func. handle a request and should call 
+Middleware functions: Its basically a function that would receive 
+res/req objects like route handlers and in addition would have a 
+third argument as a function which is called once your code 
+is executed...
+The app.use() is specific to using middlewares and 
+app.get()/post()... are all route handlers. 
+Route handlers shouldn't be necessarily considered as middlewares. 
+
+Middleware func. handles a request and should call 
 next() to forward a req. to next function in line or 
 send a respons. 
 
