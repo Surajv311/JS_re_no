@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // the css file is imported/linked in the html file. We need to pull the css file as well
 // otherwise only the html file would be rendered via app.js. So to render
 // all the other static files with our sent file(in res for our req.), we use static.
+
 /*
 NOTE: In our html files we have removed the: /public/css... path 
 as express is serving the static files from the public folder we have passed
