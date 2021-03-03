@@ -17,6 +17,12 @@ app.use("/add-product", (req, res, next) => {
   res.send(
     '<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>'
     // redirecting to /product route
+    // forms are used extensively, as consider clicking a button to go to next page,
+    // or next tab, or to fill a form and send your details- you click
+    //the next button, everything has an underlying code of html 'forms' ; as with this
+    // say you can redirect to another route or collect in the data and
+    // send it to a say, post route and take in important pieces of data via
+    // req.body - ~ using bodyParser...
   );
 });
 
